@@ -64,7 +64,6 @@ def main():
 
     final_pcd = o3d.geometry.PointCloud()
     final_pcd.points = o3d.utility.Vector3dVector(np.array(collected_points))
-    o3d.visualization.draw_geometries([pcd])
     o3d.visualization.draw_geometries([final_pcd])
 
 
